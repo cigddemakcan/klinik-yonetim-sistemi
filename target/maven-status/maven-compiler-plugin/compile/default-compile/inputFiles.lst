@@ -1,0 +1,13 @@
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\repository\AppointmentRepository.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\entity\Appointment.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\repository\DoctorRepository.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\entity\Doctor.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\repository\PatientRepository.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\entity\Prescription.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\repository\PrescriptionRepository.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\service\AppointmentService.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\controller\PrescriptionController.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\service\DoctorService.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\security\TokenService.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\controller\DoctorController.java
+C:\Users\cigdem.akcan\OneDrive - sabancidx.com\Desktop\klinik\src\main\java\com\klinik\entity\Patient.java

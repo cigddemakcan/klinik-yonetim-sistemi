@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doktor Dashboard — Klinik</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f7fafc; }
+    .sidebar { position: fixed; left: 0; top: 0; bottom: 0; width: 220px; background: #1a3c34; padding: 24px 0; }
+    .sidebar-logo { color: #fff; font-size: 16px; font-weight: 700; padding: 0 20px 24px; border-bottom: 1px solid #2d5446; }
+    .nav-item { display: block; color: #a0c4b8; padding: 12px 20px; font-size: 14px; cursor: pointer; text-decoration: none; }
+    .nav-item:hover, .nav-item.active { background: #2d5446; color: #fff; }
+    .main { margin-left: 220px; padding: 32px; }
+    h2 { font-size: 22px; color: #1a202c; font-weight: 600; margin-bottom: 24px; }
+    .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.07); margin-bottom: 24px; }
+    .card h3 { font-size: 16px; font-weight: 600; color: #2d3748; margin-bottom: 16px; }
+    .filter-row { display: flex; gap: 12px; align-items: center; margin-bottom: 20px; }
+    input[type=date], select { padding: 8px 12px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 14px; outline: none; }
+    .btn { padding: 8px 20px; background: #38a169; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; }
+    th { text-align: left; font-size: 12px; color: #718096; font-weight: 600; padding: 10px 12px; border-bottom: 2px solid #e2e8f0; }
+    td { padding: 12px; font-size: 14px; color: #2d3748; border-bottom: 1px solid #f7fafc; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+    .badge-green { background: #f0fff4; color: #276749; }
+    .badge-yellow { background: #fffff0; color: #744210; }
+    .badge-red { background: #fff5f5; color: #c53030; }
+    .badge-blue { background: #ebf4ff; color: #2b6cb0; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="sidebar-logo">👨‍⚕️ Dr. Mehmet Öz</div>
+    <a class="nav-item active">📅 Randevularım</a>
+    <a class="nav-item">🧑 Hastalarım</a>
+    <a class="nav-item">📋 Reçeteler</a>
+    <a class="nav-item">⏰ Müsait Saatler</a>
+    <a class="nav-item" onclick="window.location='index.html'" style="color:#fc8181;">🚪 Çıkış</a>
+  </div>
+  <div class="main">
+    <h2>Hasta Randevu Listesi</h2>
+    <div class="card">
+      <h3>📅 Tüm Randevular</h3>
+      <div class="filter-row">
+        <input type="date" id="filterDate" value="2024-06-01"/>
+        <select>
+          <option>Tüm Durumlar</option>
+          <option>CONFIRMED</option>
+          <option>PENDING</option>
+          <option>CANCELLED</option>
+        </select>
+        <button class="btn">Filtrele</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Hasta Adı</th><th>Tarih / Saat</th><th>Durum</th><th>Notlar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Ali Veli</td><td>01.06.2024 09:00</td><td><span class="badge badge-green">COMPLETED</span></td><td>Kontrol muayenesi</td></tr>
+          <tr><td>2</td><td>Fatma Demir</td><td>01.06.2024 09:30</td><td><span class="badge badge-blue">CONFIRMED</span></td><td>Kan tahlili sonuçları</td></tr>
+          <tr><td>3</td><td>Hasan Kaya</td><td>01.06.2024 10:00</td><td><span class="badge badge-yellow">PENDING</span></td><td>İlk muayene</td></tr>
+          <tr><td>4</td><td>Zeynep Arslan</td><td>01.06.2024 10:30</td><td><span class="badge badge-blue">CONFIRMED</span></td><td>EKG takibi</td></tr>
+          <tr><td>5</td><td>Murat Şahin</td><td>01.06.2024 11:00</td><td><span class="badge badge-red">CANCELLED</span></td><td>Hasta iptal etti</td></tr>
+          <tr><td>6</td><td>Emine Çelik</td><td>01.06.2024 11:30</td><td><span class="badge badge-blue">CONFIRMED</span></td><td>İlaç kontrolü</td></tr>
+          <tr><td>7</td><td>Kemal Yıldız</td><td>01.06.2024 14:00</td><td><span class="badge badge-blue">CONFIRMED</span></td><td>Rutin kontrol</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+com\klinik\service\DoctorService.class
+com\klinik\repository\PrescriptionRepository.class
+com\klinik\entity\Appointment.class
+com\klinik\repository\AppointmentRepository.class
+com\klinik\entity\Doctor.class
+com\klinik\service\AppointmentService.class
+com\klinik\controller\DoctorController.class
+com\klinik\repository\DoctorRepository.class
+com\klinik\security\TokenService.class
+com\klinik\entity\Patient.class
+com\klinik\entity\Appointment$AppointmentStatus.class
+com\klinik\entity\Prescription.class
+com\klinik\repository\PatientRepository.class
+com\klinik\controller\PrescriptionController.class
